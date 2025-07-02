@@ -51,7 +51,7 @@ namespace Infrastructure.Services
           
             return new RegisterResponseDto { IsSuccessful = true };
         }
-
+          
         public async Task<bool> LoginAsync(LoginUserDto loginUserDto)
         {
             _user = await _userManager.FindByEmailAsync(loginUserDto.Email!);
